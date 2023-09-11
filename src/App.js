@@ -1,37 +1,26 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
-import landingPage from './images/landingPage.jpg'
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+import { Routes } from "react-router-dom";
+import { Home } from "./pages/home/Home";
+import { SparePartsPage } from "./pages/SparePartsPage";
+import { RefurbishedMowerPage } from "./pages/RefurbishedMowersPage";
+import { ServicingRepairsPage } from "./pages/ServicingRepairsPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 function App() {
-	return (
-		<div>
-			<nav class="navbar background">
-				<ul class="nav-list">
-				    <h4>Dave Naughton Mower Service</h4>
-					<li><a href="#courses">Servicing and Repairs</a></li>
-					<li><a href="#tutorials">Spare Parts</a></li>
-					<li><a href="#jobs">Refurbished Lawn Mowers</a></li>
-				</ul>
-
-				<div class="rightNav">
-					<input type="text" name="search" id="search" />
-					<button class="btn btn-sm">Search</button>
-				</div>
-			</nav>
-
-	<div class="box-main">
-	<div style={{ backgroundImage: `url(${landingPage})` }}>
-      Hello World
-    </div>
-		</div>			
-			<footer className="footer">
-				<p className="text-footer">
-					Copyright ©-All rights are reserved
-				</p>
-			</footer>
-		</div>
-	)
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />}/>
+		<Route path="/spareParts" element={<SparePartsPage />}/>
+		<Route path="/refurbishedMowers" element={<RefurbishedMowerPage />}/>
+		<Route path="/servicingRepairs" element={<ServicingRepairsPage />}/>
+		<Route path="*" element={<NotFoundPage />}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
