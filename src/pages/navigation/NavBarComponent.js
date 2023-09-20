@@ -5,16 +5,13 @@ import "./NavBar.css";
 export const NavBar = () => {
   return (
     <div className="content">
-      <nav className="navbar background">
+      <nav className="navbar navbar-light">
         <ul className="nav-list">
           <li>
-            <a href="/servicingRepairs">Servicing and Repairs</a>
+            <a class="navbar-brand" href="/about">About</a>
           </li>
           <li>
-            <a href="/spareParts">Spare Parts</a>
-          </li>
-          <li>
-            <a href="/refurbishedMowers">Refurbished Lawn Mowers</a>
+            <a class="navbar-brand" href="/shop">Shop</a>
           </li>
         </ul>
       </nav>

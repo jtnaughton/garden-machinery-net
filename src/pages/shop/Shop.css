@@ -1,0 +1,12 @@
+.productGrid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 380px 380px 380px;
+    place-items: center;
+  }
+
+.title {
+    align-items: center;
+}

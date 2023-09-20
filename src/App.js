@@ -5,8 +5,8 @@ import "./App.css";
 import { Routes } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { SparePartsPage } from "./pages/SparePartsPage";
-import { RefurbishedMowerPage } from "./pages/RefurbishedMowersPage";
-import { ServicingRepairsPage } from "./pages/ServicingRepairsPage";
+import { Shop } from "./pages/shop/Shop";
+import { About } from "./pages/About";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
       <Routes>
         <Route index element={<Home />}/>
 		<Route path="/spareParts" element={<SparePartsPage />}/>
-		<Route path="/refurbishedMowers" element={<RefurbishedMowerPage />}/>
-		<Route path="/servicingRepairs" element={<ServicingRepairsPage />}/>
+		<Route path="/shop" element={<Shop />}/>
+		<Route path="/about" element={<About />}/>
 		<Route path="*" element={<NotFoundPage />}/>
       </Routes>
     </BrowserRouter>
