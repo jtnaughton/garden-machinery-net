@@ -1,13 +1,19 @@
+
 import { PRODUCTS } from "./Products";
 import { Product } from "./product";
 import "./Shop.css";
 
-export const Shop = () => {
+export const Shop = (props) => {
   return (
     <div className="container py-5">
       <h1 className="title pb-5">
         <center>Products</center>
       </h1>
+      <div className="links">
+        <a href="/basket">
+          Basket
+        </a>
+      </div>
       <button
         class="btn btn-secondary btn-sm dropdown-toggle"
         type="button"
@@ -15,9 +21,9 @@ export const Shop = () => {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Filter by 
+        Filter by
       </button>
-      <div class="row">
+      <div className="row">
         <div className="productGrid">
           {" "}
           {PRODUCTS.map((product) => (

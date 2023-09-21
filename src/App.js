@@ -8,18 +8,25 @@ import { SparePartsPage } from "./pages/SparePartsPage";
 import { Shop } from "./pages/shop/Shop";
 import { About } from "./pages/About";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { ShopContextProvider } from "./context/context";
+import { Basket } from "./pages/shop/basket";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />}/>
-		<Route path="/spareParts" element={<SparePartsPage />}/>
-		<Route path="/shop" element={<Shop />}/>
-		<Route path="/about" element={<About />}/>
-		<Route path="*" element={<NotFoundPage />}/>
-      </Routes>
-    </BrowserRouter>
+    
+      <ShopContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/spareParts" element={<SparePartsPage />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/basket" element={<Basket />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
+    </ShopContextProvider>
+    
   );
 }
 
