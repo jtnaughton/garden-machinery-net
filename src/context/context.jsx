@@ -1,5 +1,5 @@
 import React from "react";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { PRODUCTS } from "../pages/shop/Products";
 
 export const ShopContext = createContext(null);
@@ -23,9 +23,38 @@ export const ShopContextProvider = (props) => {
     setBasketItmes((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
-  console.log(basketItems)
-  
-  const contextValue = {basketItems, addToBasket, removeFromBasket}
+  const updateBasketCount = (newAmount, itemId) => {
+    setBasketItmes((prev) => ({ ...prev, [itemId]: newAmount }));
+  };
 
-  return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>;
+  const calculateBasketSubtotal = () => {
+    let basketSubtotal = 0;
+
+    for (let itemId in basketItems) {
+      let subTotal = 0;
+      let itemCount = basketItems[itemId];
+      if (itemCount > 0) {
+        let itemInfo = PRODUCTS.find(
+          (product) => product.id === Number(itemId)
+        );
+        subTotal += itemCount * itemInfo.price;
+        basketSubtotal += subTotal;
+      }
+    }
+    return basketSubtotal;
+  };
+
+  const contextValue = {
+    basketItems,
+    addToBasket,
+    removeFromBasket,
+    updateBasketCount,
+    calculateBasketSubtotal,
+  };
+
+  return (
+    <ShopContext.Provider value={contextValue}>
+      {props.children}
+    </ShopContext.Provider>
+  );
 };

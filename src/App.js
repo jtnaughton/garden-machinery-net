@@ -13,7 +13,6 @@ import { Basket } from "./pages/shop/basket";
 
 function App() {
   return (
-    
       <ShopContextProvider>
       <BrowserRouter>
         <Routes>
@@ -26,7 +25,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ShopContextProvider>
-    
+
   );
 }
 

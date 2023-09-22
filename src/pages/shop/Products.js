@@ -1,60 +1,69 @@
-import lawnMower1 from '../../images/lawnMowerOne.jpg'
+import lawnMower1 from "../../images/lawnMowerOne.jpg";
+import airFilter from "../../images/airFilter.jpg";
+import blueMower from "../../images/blueMower.jpg";
+import cableClutch from "../../images/cableClutch.jpg";
+import handleScrew from "../../images/handleScrew.webp";
+import honda from "../../images/honda.jpg";
+import pullStarterRecoil from "../../images/pullStarterRecoil.jpg";
+import redMedium from "../../images/redMedium.jpg";
+import redSmall from "../../images/redSmall.jpg";
+
 
 export const PRODUCTS = [
-    {
-        id: 1,
-        productBrand: 'Lawn Mower 1',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 500,
-    },
-    {
-        id: 2,
-        productBrand: 'Lawn Mower 2',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 400,
-    },
-    {
-        id: 3,
-        productBrand: 'Lawn Mower 3',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 560,
-    },
-    {
-        id: 4,
-        productBrand: 'Lawn Mower 4',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 590,
-    },
-    {
-        id: 5,
-        productBrand: 'Lawn Mower 5',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 900,
-    },
-    {
-        id: 6,
-        productBrand: 'Lawn Mower 6',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 200,
-    },
-    {
-        id: 7,
-        productBrand: 'Lawn Mower 1',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 350,
-    },
-    {
-        id: 8,
-        productBrand: 'Lawn Mower 1',
-        productModel: 'X 9000',
-        productImage: lawnMower1,
-        price: 99,
-    }
-]
+  {
+    id: 1,
+    productBrand: "Lawn Mower 1",
+    productModel: "X 9000",
+    productImage: lawnMower1,
+    price: 699,
+  },
+  {
+    id: 2,
+    productBrand: "Air Filter",
+    productModel: "1",
+    productImage: airFilter,
+    price: 14.99,
+  },
+  {
+    id: 3,
+    productBrand: "Blue Mower",
+    productModel: "HRV8",
+    productImage: blueMower,
+    price: 235.99,
+  },
+  {
+    id: 4,
+    productBrand: "Cable Clutch",
+    productModel: "TR1",
+    productImage: cableClutch,
+    price: 25.99,
+  },
+  {
+    id: 5,
+    productBrand: "Handle Screw",
+    productModel: "VHS",
+    productImage: handleScrew,
+    price: 8.99,
+  },
+  {
+    id: 6,
+    productBrand: "Honda XFRT",
+    productModel: "TT60",
+    productImage: honda,
+    price: 699,
+  },
+  {
+    id: 7,
+    productBrand: "Pull Starter Recoil",
+    productModel: "1",
+    productImage: pullStarterRecoil,
+    price: 35,
+  },
+  {
+    id: 8,
+    productBrand: "Lawn Mower 2",
+    productModel: "X 9000",
+    productImage: redSmall,
+    price: 99.99,
+  },
+];

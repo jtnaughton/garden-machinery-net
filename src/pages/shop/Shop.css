@@ -1,12 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .productGrid {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 380px 380px 380px;
-    place-items: center;
+    padding-top: 3em;
   }
 
 .title {
-    align-items: center;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.filterButton {
+  display: flex;
 }
