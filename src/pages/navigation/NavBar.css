@@ -1,39 +1,15 @@
-.content {
-    width: 1000px;
-    margin: auto;
-  }
-  
+
   .footer {
     background-color: #000;
   }
-  
-  .nav-list {
-    width: 100%;
-    display: flex;
+
+  .navbar-brand {
+    font-family: "sora", sans-serif;
+    font-size: 15px;
   }
-  
-  .nav-list li {
-    list-style: none;
-    padding: 10px 90px;
-    justify-content: space-between;
-  }
-  
-  .nav-list li a {
-    text-decoration: none;
-    color: white;
-    margin: 0;
-  }
-  
-  .nav-list li a:hover {
+
+  .navbar-brand a:hover  {
     color: grey;
-  }
-  
-  .text-footer {
-    text-align: center;
-    padding: 30px 0;
-    font-family: "Ubuntu", sans-serif;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-  }
+  };
+
   

@@ -5,7 +5,6 @@ import cableClutch from "../../images/cableClutch.jpg";
 import handleScrew from "../../images/handleScrew.webp";
 import honda from "../../images/honda.jpg";
 import pullStarterRecoil from "../../images/pullStarterRecoil.jpg";
-import redMedium from "../../images/redMedium.jpg";
 import redSmall from "../../images/redSmall.jpg";
 
 

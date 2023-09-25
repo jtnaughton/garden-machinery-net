@@ -8,7 +8,6 @@ import "./Shop.css";
 export const Shop = () => {
   return (
     <div className="container">
-
       <div className="navBar">
         <nav class="navbar navbar-light bg-light p-3">
           <a class="navbar-brand">
@@ -20,28 +19,17 @@ export const Shop = () => {
         </nav>
       </div>
 
-    <div className="section">
-      <h1 className="title pt-5">Products</h1>
-      <div className="filterButton">
-        <button
-          class="btn btn-secondary btn-sm dropdown-toggle"
-          type="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Filter by
-        </button>
-      </div>
+      <div className="section">
+        <h1 className="title pt-5">Products</h1>
 
-       <div className="">
-        <div className="productGrid">
-          {PRODUCTS.map((product) => (
-            <Product data={product} />
-          ))}
+        <div className="">
+          <div className="productGrid">
+            {PRODUCTS.map((product) => (
+              <Product data={product} />
+            ))}
+          </div>
         </div>
-    </div>
       </div>
-  </div>
+    </div>
   );
 };

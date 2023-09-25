@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div className="content">
-      <nav className="navbar navbar-light">
-        <ul className="nav-list">
-          <li>
-            <Link class="navbar-brand" to="/about">About</Link>
-          </li>
-          <li>
-            <Link class="navbar-brand" to="/shop">Shop</Link>
-          </li>
-        </ul>
+    <div className="navBar">
+      <nav className="navbar navbar-light bg-light d-flex justify-content-center align-items-center">
+        <div className="nav-items">
+          <a className="navbar-brand">
+            <Link to="/about">About</Link>
+          </a>
+          <a class="navbar-brand">
+            <Link to="/notFound">Sign in</Link>
+          </a>
+        </div>
       </nav>
     </div>
   );
