@@ -20,12 +20,13 @@ export const Home = () => {
             </h1>
             <p className="landingPageDes align-self-center">
               High quality refurbished Lawnmowers and spare parts. <br />
+              <br />
               Unbeatable prices.
               <div className="buttonContainer align-self-center pt-3">
-              <Link className="shopNowButton" to="/shop">
-                Shop
-              </Link>
-            </div>
+                <Link className="shopNowButton" to="/shop">
+                  Shop
+                </Link>
+              </div>
             </p>
           </div>
         </div>
