@@ -1,15 +1,8 @@
+.navbar-brand {
+  font-family: "sora", sans-serif;
+  font-size: 15px;
+}
 
-  .footer {
-    background-color: #000;
-  }
-
-  .navbar-brand {
-    font-family: "sora", sans-serif;
-    font-size: 15px;
-  }
-
-  .navbar-brand a:hover  {
-    color: grey;
-  };
-
-  
+.navbar-brand a:hover {
+  color: grey;
+}
